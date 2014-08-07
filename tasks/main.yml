@@ -1,0 +1,13 @@
+---
+
+- name: install
+  shell: >
+    composer create-project -n -s dev erik-dubbelboer/php-redis-admin /opt/phpredisadmin
+    creates=/opt/phpredisadmin
+  sudo: yes
+
+- name: config file
+  shell: >
+    cp /opt/phpredisadmin/includes/config.sample.inc.php /opt/phpredisadmin/includes/config.inc.php
+    creates=/opt/phpredisadmin/includes/config.inc.php
+  sudo: yes
