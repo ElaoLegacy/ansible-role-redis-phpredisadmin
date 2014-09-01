@@ -14,6 +14,7 @@ Role Variables
 
     elao_phpredisadmin_host: phpredisadmin  # PhpRedisAdmin host
 
+
 Example Playbook
 ----------------
 
