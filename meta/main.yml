@@ -5,9 +5,11 @@ dependencies:
   - { role: elao.base }
   - { role: elao.redis-server }
   - { role: elao.redis-php }
-  - { role: elao.project-php,
-      name: phpredisadmin,
-      root: '/opt/phpredisadmin' }
+  - { role: elao.project,
+    elao_projects: {
+      phpredisadmin: { type: php, host: '{{ elao_phpredisadmin_host }}', root: '/opt/phpredisadmin' }
+    }
+  }
 
 galaxy_info:
 
