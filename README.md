@@ -12,7 +12,7 @@ This role only run on elao symfony standard vagrant box. See https://vagrantclou
 Role Variables
 --------------
 
-    elao_phpredisadmin_host: phpredisadmin  # PhpRedisAdmin host
+    elao_redis_phpredisadmin_host: phpredisadmin  # PhpRedisAdmin host
 
 
 Example Playbook

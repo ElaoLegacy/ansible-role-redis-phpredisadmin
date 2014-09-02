@@ -7,7 +7,7 @@ dependencies:
   - { role: elao.redis-php }
   - { role: elao.project,
     elao_projects: {
-      phpredisadmin: { type: php, host: '{{ elao_phpredisadmin_host }}', root: '/opt/phpredisadmin' }
+      phpredisadmin: { type: php, host: '{{ elao_redis_phpredisadmin_host }}', root: '/opt/phpredisadmin' }
     }
   }
 
