@@ -2,7 +2,6 @@
 
 dependencies:
 
-  - { role: elao.base }
   - { role: elao.redis-server }
   - { role: elao.redis-php }
   - { role: elao.project,
